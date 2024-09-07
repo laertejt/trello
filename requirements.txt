@@ -1,0 +1,5 @@
+ipykernel==6.29.4
+pandas==2.2.2
+openpyxl==3.1.5
+bizdays==1.0.15
+seaborn==0.13.2
