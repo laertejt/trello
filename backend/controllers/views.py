@@ -1,6 +1,4 @@
 from datetime import date
-import logging
-logger = logging.getLogger(__name__)
 import pandas as pd
 import os
 from bizdays import Calendar
