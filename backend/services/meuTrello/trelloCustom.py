@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime, date, timedelta
-from meuTrello.trelloApi import TrelloApi
+from backend.services.meuTrello.trelloApi import TrelloApi
 
 
 class TrelloCustom(TrelloApi):

@@ -9,7 +9,7 @@ from utils.dataCalendario import DataCalendario
 dc = DataCalendario()
 key = os.environ.get('KEY')# Dados do arquivo .env
 token = os.environ.get('TOKEN')# Dados do arquivo .env
-from meuTrello.trelloCustom import TrelloCustom
+from backend.services.meuTrello.trelloCustom import TrelloCustom
 tc = TrelloCustom(key, token)
 # Criar cards
 # Gerar atividades do MES
@@ -18,8 +18,8 @@ organizacao = "Dads School Organization"
 nome="Mariana Assao Takeuti"
 df_pessoas = pd.read_excel(BASE_DIR+'/data/pessoas.xlsx', sheet_name="oficial")
 df = df_pessoas.query("organizacao==@organizacao & board==@nome")
-initial_date = datetime(2024,9,1,8,0,0)
-final_date = datetime(2024,9,30,8,0,0)
+initial_date = datetime(2024,10,1,8,0,0)
+final_date = datetime(2024,10,31,8,0,0)
 checkitem_name = "Day"
 lst_lists = list(set(df.lists.values))
 for list_name in lst_lists:

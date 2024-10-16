@@ -2,7 +2,7 @@ import pandas as pd
 import os
 key = os.environ.get('KEY')# Dados do arquivo .env
 token = os.environ.get('TOKEN')# Dados do arquivo .env
-from meuTrello.trelloCustom import TrelloCustom
+from backend.services.meuTrello.trelloCustom import TrelloCustom
 tc = TrelloCustom(key, token)
 
 def gerar_df_trello(org_name, board_name, checklist_name:str = None) -> pd.DataFrame:
