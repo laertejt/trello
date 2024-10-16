@@ -1,7 +1,5 @@
 import pandas as pd
 from backend.config.settings import DATA_DIR, LOG_DIR
-import logging
-logger = logging.getLogger(__name__)
 import streamlit as st
 import os
 from dotenv import load_dotenv
